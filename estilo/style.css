@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Kalam', cursive;
+    --fonte2: 'Josefin Slab', serif;
     --fonte3: 'Shadows Into Light', cursive;
 }
 *{
@@ -16,21 +16,22 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: rgba(195, 63, 63, 0.481);
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: rgba(215, 172, 209, 0.863);
-    color: antiquewhite;
+    background-color: rgba(228, 114, 114, 0.727);
+    color: rgb(236, 209, 177);
     text-align: center;
+    
     
 }
 header > h1 {
-    padding-top: 50px;
+    padding-top: 40px;
     font-variant: small-caps;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 header > p {
@@ -46,6 +47,19 @@ header a, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
+nav#redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
+    box-sizing: border-box;
+}
+nav#redes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.592);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.578);
+    transition: transform .3s, border 1s;
+}
 
 section {
     padding-top: 10%;
@@ -55,14 +69,28 @@ section {
     font-family: var(--fonte2);
     font-weight: bold;
     font-size: 2;
+   
 }
+
+
+
 section > p {
     padding-bottom:2em ;
+    
+
+}
+section > p > img {
+    border-radius: 80%;
+    background-position: 50%;
+    width: 300px;
+    height: 300px;
+    
 }
 
 section.normal {
-    background-color: white;
+    background-color: rgba(240, 224, 224, 0.699);
     color: black;
+    
 }
 
 section.imagem {
@@ -86,10 +114,11 @@ section#img01 {
 }
 
 section#img02 {
-    background-image: url('../imagem/imagem2.jpg');
+    background-image: url('../imagem/imagem1.jpg');
     background-size: cover;
 
 }
+
 
 
 footer {
