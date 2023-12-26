@@ -47,32 +47,38 @@ header a, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
-nav#redes img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
-    box-sizing: border-box;
-}
-nav#redes img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.592);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.578);
-    transition: transform .3s, border 1s;
+
+
+nav {
+    background-color: rgb(55, 46, 34);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.371) ;
 }
 
+nav > a {
+    color: rgb(236, 209, 177);
+    text-decoration: none;
+    text-align: justify;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: rgb(41, 103, 41);
+}
 section {
-    padding-top: 10%;
-    padding: 10vh;
+    padding-top: 5%;
+    padding: 5vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte2);
     font-weight: bold;
-    font-size: 2;
+    font-size: 3;
+    text-align: center;
+    
    
 }
-
-
 
 section > p {
     padding-bottom:2em ;
@@ -80,15 +86,19 @@ section > p {
 
 }
 section > p > img {
-    border-radius: 80%;
+    border-radius: 10%;
     background-position: 50%;
     width: 300px;
     height: 300px;
+    background-position: bottom left;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.612);
+    
+
     
 }
 
 section.normal {
-    background-color: rgba(240, 224, 224, 0.699);
+    background-color: rgb(238, 218, 218);
     color: black;
     
 }
