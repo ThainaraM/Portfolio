@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Josefin Slab', serif;
-    --fonte3: 'Shadows Into Light', cursive;
+    --fonte2: 'Shadows Into Light', cursive;
 }
 *{
     margin: 0px;
@@ -16,13 +15,12 @@
 
 html, body {
     min-height: 100vh;
-    background-color: rgba(195, 63, 63, 0.481);
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: rgba(228, 114, 114, 0.727);
-    color: rgb(236, 209, 177);
+    background-color: #61788C;
+    color: white;
     text-align: center;
     
     
@@ -30,8 +28,7 @@ header {
 header > h1 {
     padding-top: 40px;
     font-variant: small-caps;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 8vw;
+    font-size: 5vw;
 }
 
 header > p {
@@ -50,7 +47,7 @@ header a:hover, footer a:hover {
 
 
 nav {
-    background-color: rgb(55, 46, 34);
+    background-color: #A6826D;
     padding: 10px;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.371) ;
 }
@@ -72,7 +69,6 @@ section {
     padding: 5vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte2);
     font-weight: bold;
     font-size: 3;
     text-align: center;
@@ -82,7 +78,11 @@ section {
 
 section > p {
     padding-bottom:2em ;
-    
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
 section > p > img {
@@ -98,7 +98,7 @@ section > p > img {
 }
 
 section.normal {
-    background-color: rgb(238, 218, 218);
+    background-color: #fadbd0;
     color: black;
     
 }
